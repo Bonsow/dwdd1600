@@ -32,15 +32,16 @@ nav ul {
 }
 
 nav li {
-    padding-right: .5rem;
+    padding-right: .25rem;
     padding-bottom: .3rem;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: .9rem 1rem;
-    border-radius: 2rem;
+    padding: .97rem 1rem;
+    border-radius: 3rem;
+    display: block;
 }
 
 nav a:hover {
