@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--The head with metta data along with title-->
+
+    <head>
+        <title>STICC|Work</title>
+        <meta name="auther" content="Spencer anderson">
+        <meta name="description" content="All of Spencers main art and design projects">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,600;0,900;1,300;1,600&display=swap" rel="stylesheet">
+    </head>
+
+    <!--Body with all of the body things included as a websties do and whatnot-->
+
+    <body>
+        
+        <!--Here is the head along with nav-->
+
+        <header>
+            <h1>STICC</h1>
+            <p>Art and design</p>
+
+            <!--See told you have is right here-->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li class="active"><a href="work.html">Need art?</a></li>
+                </ul>
+                    <!--I really hate these being here since the more projects I add the worse the website becomes but for the class why not?-->
+                <ul>
+                    <li><a href="blender.html#clouds">Blender</a></li>
+                    <li><a href="sk2k.html#sk2k">SK2K</a></li>
+                    <li><a href="sticcprojects.html#sticc">The Sticc collection</a></li>
+                    <li><a href="projectlayout.html#layout">place holder</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--And here is the main tag-->
+
+        <main>
+            <h2>Need me to make something for you?</h2>
+
+                <!--Here is the start of the form-->
+
+            <form method="get" class="form" action="thanks.html">
+
+                <!--Personal Information-->
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" name="Fname" placeholder="First Name" required></label>
+                <label>Last Name*<input type="text" name="Lname" placeholder="Last Name" required></label>
+                <label>Phone Number*<input type="tel" name="phone" placeholder="123-456-7890" required></label>
+                <label>Email*<input type="email" name="email" placeholder="example@mail.com" required></label>
+            </fieldset>
+
+                <!--Style-->
+
+            <fieldset>
+                <Legend>Art Style</Legend>
+                <label><input type="radio" name="style" value="Vector">Vector Design</label>
+                <label><input type="radio" name="style" value="3D Render">3D Render</label>
+                <label><input type="radio" name="style" value="Typography">Typography</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Specific Information</legend>
+                <label><input type="checkbox" value="info" name="Sfile">Small file</label>
+                <label><input type="checkbox" value="info" name="Lfile">Large File</label>
+                <label><input type="checkbox" value="info" name="Rfile">Raw File</label>
+                <label><input type="checkbox" value="info" name="Animation">Animation</label>
+            </fieldset>
+
+            <fieldset>
+                <Legend>When do you need this?</Legend>
+                <select name="timeframe">
+                    <option value="none">Select Option</option>
+                    <option value="ASAP">ASAP</option>
+                    <option value="3">Within 3 Days</option>
+                    <option value="week">Within a Week</option>
+                    <option value="month">Within a Month</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special instrucitons</legend>
+                <label>Anythign specific I should know?
+                    <textarea name="special instruction"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Request">
+
+            </form>
+
+        </main>
+
+        <!--Here is the footer just in case you're trying to find it future me-->
+
+        <br>
+
+        <footer>
+            <p>&copy; 2023 &bull; Spencer Anderson &bull; <a href="Contact.html">Contact Me</a></p>
+        </footer>
+
+    </body>
+</html>
