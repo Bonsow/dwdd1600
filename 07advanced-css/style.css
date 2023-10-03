@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+}
+
+/*looks like it's time for the header*/
+
+header {
+    background-color: #000;
+    padding: 2rem 3vw;
+}
+
+.toppage {
+    display: flex;
+    align-items: flex-end;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    color: #fff;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hdtwo{
+    padding-left: 1rem;
+}
+
+.toppage img {
+    height: 4.3rem;
+    width: auto;
+    margin: 0 0 2rem 0;
+    padding-bottom: 5px;
+}
+
+/*nav nonsense*/
+
+/*small screens*/
+@media only screen and (max-width:550px) {
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        padding-right: .25rem;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: .85rem 1rem;
+        border-radius: 3rem;
+        display: block;
+        text-align: center;
+    }
+    
+    nav a:hover {
+        color: #000;
+        padding: .9rem 1rem;
+        border-radius: 2rem;
+        background-color: #7bd1e9;
+        font-weight: 600;
+    }
+    
+    nav li.active a {
+        color: #000;
+        font-weight: 900;
+        letter-spacing: -.02rem;
+        background-color: white;
+    }
+}
+
+/*big screens*/
+@media only screen and (min-width:551px) {
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding: .5rem 0;
+    }
+    
+    nav li {
+        padding-right: .25rem;
+        padding-bottom: .3rem;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: .97rem 1rem;
+        border-radius: 3rem;
+        display: block;
+    }
+    
+    nav a:hover {
+        color: #000;
+        padding: .9rem 1rem;
+        border-radius: 2rem;
+        background-color: #7bd1e9;
+        font-weight: 600;
+    }
+    
+    nav li.active a {
+        color: #000;
+        font-weight: 900;
+        letter-spacing: -.02rem;
+        background-color: #fff;
+    }
+}
+
+
+
+/*main much like the state minuse the e*/
+
+/*hero stuff here*/
+
+.sticchero {
+    width: 100%;
+    margin: 0;
+}
+
+.sticchero img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 0 3vw;
+}
+
+main a {
+    color: #0a4954;
+}
+
+main a:hover {
+    color: #ff5252;
+}
+
+main ul {
+    list-style-type: decimal;
+    background-color: #7bd1e9;
+    padding: 1rem 3rem;
+    width: 10rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    border: .3rem solid #0a4954;
+}
+
+main ul a {
+    text-decoration: none;
+}
+
+main ol {
+    list-style-type: none;
+}
+
+main ol a {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: .75rem 1rem;
+    border-radius: 2rem;
+}
+
+main ol a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+main ol p {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+main dt {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+main dd {
+    padding-bottom: 1rem;
+}
+
+main dd a:hover {
+    text-decoration: none;
+}
+
+/*start to the image shenanigans*/
+
+figure.homesticc {
+    float: right;
+    width: 20%;
+    margin: .25rem;
+}
+
+figure.homesticc img {
+    width: 100%;
+    height: auto;
+    max-height: 225px;
+    max-width: 59px;
+}
+
+figure.homesticc figcaption {
+    font-size: .8rem;
+    text-align: left;
+    margin: 0;
+}
+
+div.blender {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blender figcaption {
+    text-align: center;
+    background-color: #000;
+    border-radius: 0 0 1rem 1rem;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+}
+
+.blender figure {
+    margin: 1rem 3vw;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.blender img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+    display: block;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/*Start of the css for the form*/
+
+.form [type=text], .form [type=tel], .form [type=email], .form label, .form textarea, .form select{
+    display: block;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 200;
+    border-radius: 10px;
+}
+
+.form :required, .form textarea, .form select {
+    background-color: #ddd;
+    box-shadow: none;
+    border: none;
+    padding: .4rem;
+    width: 75vw;
+    max-width: 25rem;
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #ddd;
+}
+
+
+input[type=radio]:checked {
+    background-color: black;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: #ddd;
+    
+}
+
+input[type=checkbox]:checked {
+    background-color: black;
+}
+
+
+.form legend {
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.form fieldset {
+    border-radius: 1rem;
+    border-width: 2px;
+    border-color: #888;
+    border-style: solid;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    width: 75vw;
+}
+
+.form textarea {
+    margin: .25rem 0 0 0;
+    padding-bottom: 4rem;
+}
+
+.form label {
+    margin-top: .5rem;
+    font-weight: 600;
+}
+
+.form input[type=submit] {
+    border: none;
+    background-color: #ddd;
+    padding: .8rem;
+    border-radius: 10px;
+    margin: 0 0 0 1rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+/*footer? I hardly know her*/
+
+footer {
+    background-image: linear-gradient(white, #7bd1e9);
+    color: black;
+    padding: .5rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff5252;
+}
+
+main, nav, header, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
