@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head and tags-->
+
+<head>
+    <title>Touch Grass Vacations</title>
+    <meta name="auther" content="Spencer Anderson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="A website that helps anyone find grass that need touching">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header>
+
+        <h1>Go Touch Grass</h1>
+        <p>We can help you find some grass to touch</p>
+
+        <!--navigation-->
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="leftnav">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="contact.html" class="rightnav" id="active">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--Main-->
+
+    <main>
+        <h2>Contact</h2>
+
+        <p>We can help you find somehting specific for you so you can touch grass however and wherever you would like.</p>
+
+        <!--Contact form-->
+        
+        <form method="get" class="form" action="thanks.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>*First Name<input type="text" name="Fname" placeholder="First Name" required></label>
+            <label>*Last Name<input type="text" name="Lname" placeholder="Last Name" required></label>
+            <label>*Email<input type="email" name="email" placeholder="Email@example.com" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vacation Location</legend>
+            <label><input type="radio" name="contactradio" value="canada">Canada</label>
+            <label><input type="radio" name="contactradio" value="unitedstates">United States</label>
+            <label><input type="radio" name="contactradio" value="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Price Range</legend>
+            <select>
+                <option value="one">none</option>
+                <option value="two">$100-$250</option>
+                <option value="three">$250-$500</option>
+                <option value="four">$500+</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments</legend>
+            <label>Let us know what grass you would like to touch and how you would like to touch it.
+                <textarea name="comments"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Send Request">
+        </form>
+
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+        <p>&copy;2023 &bull; Spencer Anderson</p>
+    </footer>
+</body>
+
+</html>

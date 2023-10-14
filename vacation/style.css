@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+main, nav, header, footer {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*
+colors
+#27FA8E
+#FFF (white)
+#0FE0C8
+#4DFA62
+#000 (black)
+*/
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/*Header*/
+
+header {
+    background-image: linear-gradient(#27FA8E, #4DFA62);
+}
+
+header h1 {
+    padding: 1rem 2rem 0 2vw;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+header p {
+    margin: 0 0 2rem 2vw;
+    font-size: 1.16rem;
+    font-weight: 600;
+}
+
+/*Navigation*/
+
+/*small screens*/
+@media only screen and (max-width:600px) {
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        margin-top: 1.4rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000;
+        padding: .5rem 2rem;
+        font-weight: 700;
+        font-size: 1.4rem;
+        border-radius: 2rem;
+    }
+
+    nav a:hover {
+        background-color: #fff;
+        box-shadow: 0 0 30px #fff;
+    }
+
+    a#active {
+        background-color: #fff;
+        box-shadow: 0 0 30px #0FE0C8;
+    }
+    
+    nav {
+        padding-bottom: 1rem;
+    }
+}
+
+/*big screens*/
+@media only screen and (min-width:601px) {
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding-bottom: .5rem;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #000;
+        padding: .5rem 2rem;
+        margin: 0;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    
+    nav a:hover {
+        background-color: #fff;
+        box-shadow: 0 0 20px #fff;
+    }
+    
+    .rightnav {
+        border-radius: 0 15px 0 0 ;
+    }
+    
+    .leftnav {
+        border-radius: 15px 0 0 0;
+    }
+    
+    a#active {
+        background-color: #fff;
+        box-shadow: 0 0 40px #fff;
+    }
+}
+
+/*main*/
+
+main {
+    padding: 0 2vw;
+}
+
+main img.hero {
+    width: 98%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*packages*/
+
+img.package {
+    width: 200px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+img.package:hover {
+    animation-name: grow;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+/*learned this from "BRO CODE" on youtube who has a 4 hour video about css and html. honestly it was a super helpfull video*/
+
+/*Oh man this looks so stupid cool. could have been done better I think but this is just extra I didn't need to do this*/
+
+@keyframes grow {
+    100% {width: 384px; height: auto;
+        box-shadow: 0 0 150px rgba(0, 0, 0, .8);}
+}
+
+a.plinks {
+    text-decoration: none;
+    color: #2f993b;
+}
+
+a.plinks:hover {
+    color: #000;
+    background-color: #4DFA62;
+    padding: .2rem .75rem;
+    border-radius: 1rem;
+}
+
+/*destiantion class*/
+
+div.destinations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destinations figure {
+    margin: 2rem 3vw;
+}
+
+.destinations figcaption {
+    background-color: #4DFA62;
+    padding: .6rem 0 .6rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.destinations img {
+    display: block;
+    border-radius: 15px 15px 0 0 ;
+}
+
+/*Form*/
+
+.form [type=text], .form [type=email], .form label, .form select, .form textarea {
+    display: block;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 50vw;
+    max-width: 16rem; 
+}
+
+.form [type=text], .form [type=email], .form select, .form textarea, .form option {
+    border-radius: 15px;
+    padding: .2rem .75rem;
+    border: none;
+    background-color: #ddd;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.form [type=text]:hover, .form [type=email]:hover, .form select:hover, .form textarea:hover, .form option:hover, input[type=radio]:hover, .form input[type=submit]:hover {
+    animation-name: formglow;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+}
+
+.form fieldset {
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    max-width: 9rem;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+}
+
+.form legend {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background: #ddd;
+}
+
+
+input[type=radio]:checked {
+    background-color: #4DFA62;
+}
+
+.form textarea {
+    height: 6rem;
+}
+
+.form label {
+    font-weight: 600;
+}
+
+.form input[type=submit] {
+    border-radius: 15px;
+    padding: .8rem 1rem;
+    border: none;
+    background-color: #ddd;
+    font-weight: 600;
+    font-size: .8rem;
+    margin: 0 0 1rem 1rem;
+}
+
+@keyframes formglow {
+    100%{background-color: #4dfa6160;}
+}
+
+/*footer*/
+
+footer p {
+    text-align: center;
+    background-image: linear-gradient(#4DFA62, #27FA8E);
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+    margin: 0;
+}
