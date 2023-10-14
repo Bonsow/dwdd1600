@@ -171,8 +171,9 @@ div.destinations {
     flex-wrap: wrap;
 }
 
+/*This line was changed from a VW to a REM because when the screen went over 3000px it would go back to one collum and that looked bad*/
 .destinations figure {
-    margin: 2rem 2vw;
+    margin: 2rem 1.5rem;
 }
 
 .destinations figcaption {
